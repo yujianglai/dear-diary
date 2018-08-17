@@ -1,3 +1,2 @@
-# work-notes
-工作札记
-#commit test
+# dear dairy
+日记
