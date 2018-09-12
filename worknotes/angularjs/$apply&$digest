@@ -1,0 +1,8 @@
+$apply()以及$digest()
+	• $apply() 方法有两种形式。第一种会接受一个 function 作为参数，执行该 function 并且触发一轮 $digest循环。第二种会不接受任何参数，只是触发一轮 $digest 循环。
+	• 使用接受一个 function 作为参数的 $apply() 方法。这是因为当你传入一个 function 到 $apply() 中的时候，这个 function 会被包装到一个 try … catch 块中，所以一旦有异常发生，该异常会被 $exceptionHandler service 处理。
+	•  ng-click 指令，还有一些其它的 built-in 指令以及服务来让你更改 models( 比如 ng-model ， $timeout 等 ) 和自动触发一次 $digest 循环。$timeout service 来代替 setTimeout()会帮你调用 $apply() ，让你不需要手动地调用
+	
+	• $digest 循环会运行多少次？
+	当一个 $digest 循环运行时， watchers 会被执行来检查 scope 中的 models 是否发生了变化。如果发生了变化，那么相应的 listener 函数就会被执行。这涉及到一个重要的问题。如果 listener 函数本身会修改一个 scope model 呢？ AngularJS 会怎么处理这种情况？
+	答案是 $digest 循环不会只运行一次。在当前的一次循环结束后，它会再执行一次循环用来检查是否有 models 发生了变化。这就是脏检查 (Dirty Checking) ，它用来处理在 listener 函数被执行时可能引起的 model 变化。因此， $digest 循环会持续运行直到 model 不再发生变化，或者 $digest 循环的次数达到了 10 次。因此，尽可能地不要在 listener 函数中修改 model 。
