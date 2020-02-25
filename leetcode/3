@@ -1,0 +1,26 @@
+// 找出一个字符串中无重复字符的最长子串
+        String testStr = "abesdfewqaacd";
+        int length = testStr.length();
+        int maxLength = 1;
+        for (int index = 0; index < length; index++) {
+            if (maxLength >= length - index) {
+                break;
+            }
+            int[] ascii = new int[128];
+            int first = testStr.charAt(index);
+            ascii[first] = first;
+            for (int indexX = index + 1; indexX < length; indexX++) {
+                int curLen = indexX - index + 1;
+                int curChar = testStr.charAt(indexX);
+                if (ascii[curChar] != 0) {
+                    // 不为空
+                    maxLength = maxLength > curLen - 1 ? maxLength : curLen - 1;
+                    break;
+                }
+                else {
+                    ascii[curChar] = curChar;
+                    maxLength = maxLength > curLen ? maxLength : curLen;
+                }
+            }
+        }
+        System.out.println(maxLength);
