@@ -1,0 +1,77 @@
+
+hasWriteRight: false
+hasExecRight: false
+hasExtRight: false
+----------------------------------------
+right sum: 3
+hasReadRight: false
+hasWriteRight: true
+hasExecRight: true
+hasExtRight: false
+----------------------------------------
+right sum: 5
+hasReadRight: true
+hasWriteRight: false
+hasExecRight: true
+hasExtRight: false
+----------------------------------------
+right sum: 6
+hasReadRight: true
+hasWriteRight: true
+hasExecRight: false
+hasExtRight: false
+----------------------------------------
+right sum: 7
+hasReadRight: true
+hasWriteRight: true
+hasExecRight: true
+hasExtRight: false
+----------------------------------------
+right sum: 8
+hasReadRight: false
+hasWriteRight: false
+hasExecRight: false
+hasExtRight: true
+----------------------------------------
+right sum: 9
+hasReadRight: false
+hasWriteRight: false
+hasExecRight: true
+hasExtRight: true
+----------------------------------------
+right sum: 10
+hasReadRight: false
+hasWriteRight: true
+hasExecRight: false
+hasExtRight: true
+----------------------------------------
+right sum: 11
+hasReadRight: false
+hasWriteRight: true
+hasExecRight: true
+hasExtRight: true
+----------------------------------------
+right sum: 12
+hasReadRight: true
+hasWriteRight: false
+hasExecRight: false
+hasExtRight: true
+----------------------------------------
+right sum: 13
+hasReadRight: true
+hasWriteRight: false
+hasExecRight: true
+hasExtRight: true
+----------------------------------------
+right sum: 14
+hasReadRight: true
+hasWriteRight: true
+hasExecRight: false
+hasExtRight: true
+----------------------------------------
+right sum: 15
+hasReadRight: true
+hasWriteRight: true
+hasExecRight: true
+hasExtRight: true
+----------------------------------------
