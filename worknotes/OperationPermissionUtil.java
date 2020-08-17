@@ -1,3 +1,7 @@
+/**
+ * 模拟Linux文件用数字赋权
+ * 之前在安防门禁里面我给APP做的操作权限判断算法类似，跟Linux的文件权限的数字规则异曲同工。
+ */
 public class Test {
     public static void main(String[] args) {
         // 可扩展的文件权限修改方案，暂实现读写可执行（421），支持扩展新增的权限数字
